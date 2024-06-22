@@ -32,3 +32,12 @@ form.addEventListener('submit', function(e) {
     form.reset();
 });
 
+// supprimer une taches 
+
+// Écoute des clics sur les boutons "Supprimer"
+tachesListes.addEventListener('click', function(e) {
+    if (e.target.classList.contains('btn-delete')) {
+        e.target.closest('.tache-css').remove(); // Supprime l'élément parent de la tâche
+    }
+});
+
