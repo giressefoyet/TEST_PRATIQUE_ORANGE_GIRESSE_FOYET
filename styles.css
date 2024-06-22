@@ -115,6 +115,22 @@ form {
     font-size: 17px;
 }
 
+/* le boutton de suppression des taches */
+.btn-delete{
+    padding: 10px;
+    background-color: orange;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+.btn-delete:hover{
+    opacity: 0.7;
+}
+
+
 /* Assurer que le main est responsive */
 @media (max-width: 768px) {
     main {
