@@ -89,7 +89,7 @@ form.addEventListener('submit', function(e) {
     // Création de l'objet de tâche à envoyer
     const newTache = {
         title: nom,
-        completed: false // Par défaut, la tâche n'est pas terminée
+        completed: false // la tâche n'est pas terminée
     };
 
     // Envoi de la nouvelle tâche à l'API via POST
@@ -108,7 +108,6 @@ form.addEventListener('submit', function(e) {
         taskList.innerHTML = `
             <h3>Tâche: ${data.title}</h3>
             <p><strong>Statut:</strong> En cours</p>
-            <p><strong>Description:</strong> ${data.description}</p>
             <button class="btn-delete" data-id="${data.id}">Supprimer</button>
         `;
         tachesListes.appendChild(taskList);
