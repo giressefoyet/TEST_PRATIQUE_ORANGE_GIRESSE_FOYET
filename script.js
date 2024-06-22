@@ -108,6 +108,7 @@ form.addEventListener('submit', function(e) {
         taskList.innerHTML = `
             <h3>Tâche: ${data.title}</h3>
             <p><strong>Statut:</strong> En cours</p>
+            <p><strong>Description:</strong> ${data.description}</p>
             <button class="btn-delete" data-id="${data.id}">Supprimer</button>
         `;
         tachesListes.appendChild(taskList);
