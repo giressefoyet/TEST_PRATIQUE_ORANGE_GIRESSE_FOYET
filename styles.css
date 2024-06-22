@@ -1,0 +1,131 @@
+/* Réinitialisez les marges de tous les éléments */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+/* Style du header: centrer le texte, background orange, texte blanc, et une marge intérieure de 10px */
+header {
+    background-color: orange;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Main en display grid, rendu flexible */
+main {
+    width: 90%;
+    margin: 20px auto; /* on centre le block main avec des marges de 20px en haut et 20px en bas*/
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Création de 02 colonnes */
+    gap: 10px;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+/* Style pour chaque partie */
+form {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.12); /* Ombre à opacité de 12% */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Contenu de chaque bloc en colonne */
+.form-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+/* Style des labels */
+.form-group label {
+    font-size: 17px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: 1px solid orange; /* Changer les bordures des champs */
+    border: none; /* Enlever la bordure lorsque le curseur se trouve sur le champ */
+}
+
+/* Stylisons le bouton d'envoi */
+.form-group input[type="submit"] {
+    background-color: orange;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: bold;
+    transition: opacity 0.5s ease; /* Transition pour gérer les effets de hover */
+}
+
+.form-group input[type="submit"]:hover {
+    opacity: 0.7; /* Réduire l'opacité à 70% pour le hover du bouton ajouter */
+}
+
+/* Style pour le bloc liste des tâches */
+#task-list {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+#task-list h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Assurer que le main est responsive */
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr; /* Passons à une seule colonne */
+    }
+
+    form, #task-list {
+        margin-bottom: 20px; /* Ajoutons une marge en bas pour séparer le formulaires et la liste des taches */
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    form, #task-list {
+        padding: 15px;
+    }
+
+    .form-group label {
+        font-size: 16px;
+    }
+
+    .form-group input, .form-group textarea {
+        padding: 8px;
+    }
+
+    .form-group input[type="submit"] {
+        font-size: 16px;
+    }
+}
