@@ -26,6 +26,7 @@ main {
     gap: 10px;
     padding: 20px;
     background-color: #f0f0f0;
+    border-radius: 10px;
 }
 
 /* Style pour chaque partie */
@@ -89,11 +90,13 @@ form {
     background-color: white;
     padding: 20px;
     border: 1px solid #ccc;
+    border-radius: 10px;
 }
 
 #task-list h2 {
     text-align: center;
     margin-bottom: 20px;
+    text-transform: capitalize;
 }
 
 
