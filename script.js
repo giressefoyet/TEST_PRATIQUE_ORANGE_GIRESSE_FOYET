@@ -1,3 +1,10 @@
+/* 
+    Nom: FOYET FRANCK GIRESSE
+    TEST ORANGE SUMMER 
+    VOICI MON CODE JAVASCRIPT
+    Projet Gestionnaire de taches
+*/
+
 // Sélection du formulaire
 const form = document.getElementById('form-task');
 
