@@ -96,6 +96,22 @@ form {
     margin-bottom: 20px;
 }
 
+
+/* le sytle de chaque tache */
+.tache-css{
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.tache-css h3,
+.tache-css p{
+    margin-bottom: 10px;
+}
+.tache-css p{
+    font-size: 17px;
+}
+
 /* Assurer que le main est responsive */
 @media (max-width: 768px) {
     main {
