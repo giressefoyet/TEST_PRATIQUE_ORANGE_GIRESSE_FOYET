@@ -40,4 +40,3 @@ tachesListes.addEventListener('click', function(e) {
         e.target.closest('.tache-css').remove(); // Supprime l'élément parent de la tâche
     }
 });
-
