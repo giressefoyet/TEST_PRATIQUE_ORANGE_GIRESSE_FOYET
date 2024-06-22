@@ -14,19 +14,19 @@ form.addEventListener('submit', function(e) {
     const dateLimite = document.getElementById('date_limite').value;
 
     // Création d'un élément de tâche
-    const taskEffectuer = document.createElement('div');
-    taskEffectuer.classList.add('tache-css');
+    const tacheList = document.createElement('div');
+    tacheList.classList.add('tache-css');
     
     // Structure de la tâche à ajouter
-    taskEffectuer.innerHTML = `
-        <h3>${nom}</h3>
-        <p>${description}</p>
+    tacheList.innerHTML = `
+        <h3>Taches: ${nom}</h3>
+        <p><strong>Description:</strong> ${description}</p>
         <p><strong>Date limite:</strong> ${dateLimite}</p>
         <button class="btn-delete">Supprimer</button>
     `;
 
     // Ajout de la tâche à la liste
-    tachesListes.appendChild(taskElement);
+    tachesListes.appendChild(tacheList);
 
     // Réinitialisation du formulaire après ajout
     form.reset();
