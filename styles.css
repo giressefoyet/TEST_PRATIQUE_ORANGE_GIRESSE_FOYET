@@ -39,6 +39,7 @@ main {
 
 /* Style pour chaque partie */
 form {
+    height: 500px;
     background-color: white;
     padding: 20px;
     border: 1px solid #ccc;
